@@ -1,0 +1,6 @@
+pipeline:
+  test:
+    image: ssisoo/pimcore-ci-env
+    commands:
+      - composer install
+      - phpunit --testsuite client
